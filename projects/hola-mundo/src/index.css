@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    background-color: rgb(42, 43, 43);
+    font-family: system-ui;
+    display: grid;
+    place-content: center;
+    min-height: 100vh;
+    color: white;
+}
+
+.TwitterUsersFollow{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
