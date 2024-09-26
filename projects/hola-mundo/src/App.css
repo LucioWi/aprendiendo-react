@@ -29,9 +29,28 @@
 }
 
 .tw-followCard-button {
+    cursor: pointer;
     margin-left: 16px;
     border: 0;
     border-radius: 999px;
     padding: 8px 18px;
     font-weight: bold;
+    transition: .1s ease background-color;
+}
+
+.tw-followCard-button.is-following{
+    box-shadow: inset 0 0 0 1px grey;
+    background-color: transparent;
+    color: #fff;
+    transition: .2s ease background-color;
+}
+
+.tw-followCard-button:hover{
+    background-color: #c7c7c7;
+}
+
+.tw-followCard-button.is-following:hover{
+    background-color: #3d0101;
+    box-shadow: inset 0 0 0 1px rgb(173, 0, 0);
+    color: rgb(238, 0, 0);
 }
