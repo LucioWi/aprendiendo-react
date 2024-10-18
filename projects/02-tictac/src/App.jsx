@@ -28,7 +28,7 @@ function App() {
     resetGameStorage()
   }
 
-  const updateBoard = (index) => { 
+  const updateBoard = (index) => {
     // no actualizamos esta posición si ya tiene algo
     if (board[index] || winner) return
     // actualizar el tablero
