@@ -18,8 +18,7 @@ function App() {
     return turnFromStorage ?? TURNS.X
   })
 
-  // null es que no hay ganador, false es que hay un empate
-  const [winner, setWinner] = useState(null)
+  const [winner, setWinner] = useState(null) // Esto es un estado para verificar si el usuario hizo una combinación ganadora. null es que no hay ganador, false es que hay un empate
 
   const resetGame = () => {
     setBoard(Array(9).fill(null))
@@ -30,8 +29,7 @@ function App() {
   }
 
   const updateBoard = (index) => { 
-    // no actualizamos esta posición
-    // si ya tiene algo
+    // no actualizamos esta posición si ya tiene algo
     if (board[index] || winner) return
     // actualizar el tablero
     const newBoard = [...board] //esto es un spread operator, lo que hace es copiar el array anterior y meterlo en uno nuevo, es MUY IMPORTANTE saber qué es esto junto al rest operator si queres comer trabajando de programador
