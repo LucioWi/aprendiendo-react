@@ -21,5 +21,5 @@ export const checkEndGame = (newBoard) => {
   // revisamos si hay un empate
   // si no hay más espacios vacíos
   // en el tablero
-  return newBoard.every((square) => square !== null)
+  return newBoard.every((square) => square !== null) //Esto verifica que cada square del array newBoard es distinto a null, esto es para confirmar si ya se seleccionaron todas las casillas disponibles
 }

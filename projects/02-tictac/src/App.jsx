@@ -20,7 +20,7 @@ function App() {
 
   const [winner, setWinner] = useState(null) // Esto es un estado para verificar si el usuario hizo una combinación ganadora. null es que no hay ganador, false es que hay un empate
 
-  const resetGame = () => {
+  const resetGame = () => { // Esto resetea el estado de las props sin recargar la página desde 0, lo que permite volver a jugar, es bastante importante para cualquier proyecto saber esto
     setBoard(Array(9).fill(null))
     setTurn(TURNS.X)
     setWinner(null)
