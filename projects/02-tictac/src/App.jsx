@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState } from 'react' // Esto es un hook, dato adicinal, nunca se puede usar un hook dentro de un if, while, switch o cualquier otro
 
 import { Square } from './components/Square.jsx'
 import { TURNS } from './constants.js'
@@ -8,7 +8,7 @@ import { saveGameToStorage, resetGameStorage } from './logic/storage/index.js'
 
 function App() {
   const [board, setBoard] = useState(() => {
-    const boardFromStorage = window.localStorage.getItem('board')
+    const boardFromStorage = window.localStorage.getItem('board') //Se hace de esta forma porque el localStorage no puede almacenar arrays
     if (boardFromStorage) return JSON.parse(boardFromStorage)
     return Array(9).fill(null)
   })
