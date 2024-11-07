@@ -19,6 +19,10 @@ function App() {
       window.removeEventListener('pointermove', handleMove)
     } // esto es para empezar desde 0 limpiando la suscripción. Es importante para el rendimiento
   }, [enabled]) // esto es una dependencia, es lo que necesita obtener el useEffect para renderizarse, en caso de que no tenga ninguna dependencia se va a renderizar automaticamente
+  // [] Se ejecuta una sola vez y es cuando se monta el componente
+  // [enabled] Se ejecuta cuando cambia enabled y cuando se monta el componente
+  // [undefined] se ejecuta cada vez que se renderice el componente
+  
   return (
     <main>
       <div style={{
