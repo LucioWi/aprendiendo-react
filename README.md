@@ -1,4 +1,4 @@
-![images](https://github.com/user-attachments/assets/c492d375-a57c-4310-a0f3-03468a9d1fbc)
+![react-logo-freelogovectors net_](https://github.com/user-attachments/assets/db9e1856-b052-4f10-ba48-d88ab9399b64)
 
 Curso con distintos proyectos que estoy aprendiendo en React.js
 
