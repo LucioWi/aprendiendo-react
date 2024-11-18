@@ -1,3 +1,5 @@
+![download](https://github.com/user-attachments/assets/e72dddce-d6df-4865-b95b-d14dc07c8697)
+
 Curso con distintos proyectos que estoy aprendiendo en React.js
 
 -------------------------------
